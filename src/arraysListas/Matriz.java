@@ -17,7 +17,7 @@ public class Matriz {
 			}
 		}
 		
-		System.out.println("Main diagonal: ");
+		System.out.println("Main Diagonal: ");
 		
 		for (int i=0; i<mat.length; i++) {
 			System.out.print(mat[i][i] + " ");
@@ -33,7 +33,7 @@ public class Matriz {
 			}
 		}
 		
-		System.out.println("Negative numbers: " + count);
+		System.out.println("Negative Numbers: " + count);
 		
 		sc.close();
 
