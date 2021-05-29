@@ -9,6 +9,7 @@ public class Matriz {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Bom dia!");
+		System.out.println("Boa tarde!");
 		
 		int n = sc.nextInt();
 		int[][] mat = new int[n][n];
