@@ -8,6 +8,8 @@ public class Matriz {
 		
 		Scanner sc = new Scanner(System.in);
 		
+		System.out.println("Bom dia!");
+		
 		int n = sc.nextInt();
 		int[][] mat = new int[n][n];
 		
