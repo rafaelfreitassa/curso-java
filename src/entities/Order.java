@@ -19,7 +19,7 @@ public class Order {
 		this.moment = moment;
 		this.status = status;
 	}
-
+	
 	public Integer getId() {
 		return id;
 	}
