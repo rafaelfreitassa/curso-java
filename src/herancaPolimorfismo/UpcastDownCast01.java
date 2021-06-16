@@ -1,4 +1,4 @@
-package HerancaPolimorfismo;
+package herancaPolimorfismo;
 
 import entities.Account3;
 import entities.BusinessAccount;
