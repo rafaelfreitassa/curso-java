@@ -23,7 +23,7 @@ public class Program05 {
 		
 		File[] files = path.listFiles(File::isFile);
 		
-		System.out.println("FOLDERS: ");
+		System.out.println("FILES: ");
 		for (File file : files) {
 			System.out.println(file);
 		}
