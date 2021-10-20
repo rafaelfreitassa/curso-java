@@ -1,6 +1,6 @@
 package entities;
 
-public class Product5 {
+public class Product5 implements Comparable<Product5>{
 
 	private String name;
 	private Double price;
@@ -29,5 +29,10 @@ public class Product5 {
 	@Override
 	public String toString() {
 		return name + ", " + String.format("%.2f", price);
+	}
+
+	@Override
+	public int compareTo(Product5 other) {
+		return price.compareTo(other.getPrice());
 	}
 }
