@@ -16,15 +16,10 @@ public class Program {
 		list.add(new Product8("Notebook", 1200.00));
 		list.add(new Product8("Tablet", 450.00));
 		
-		Comparator<Product8> comp = new Comparator<Product8>() {
-
-			@Override
-			public int compare(Product8 p1, Product8 p2) {
-				return p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase());
-			}
-			
+		Comparator<Product8> comp =  (p1, p2) -> {
+			return p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase());
 		};
-		
+				
 		list.sort(comp);
 		
 		for (Product8 p : list) {
