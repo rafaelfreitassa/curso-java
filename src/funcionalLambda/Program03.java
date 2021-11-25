@@ -2,6 +2,7 @@ package funcionalLambda;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 
 import entities.Product8;
 
@@ -15,8 +16,10 @@ public class Program03 {
 		list.add(new Product8("Mouse", 50.00));
 		list.add(new Product8("Tablet", 350.00));
 		list.add(new Product8("Notebook", 80.90));
-				
-		list.removeIf(Product8::nonstaticProductPredicate);
+		
+		Predicate<Product8> pred = p -> p.getPrice() >= 100.0;
+		
+		list.removeIf(pred);
 		
 		for (Product8 p : list) {
 			System.out.println(p);
