@@ -1,10 +1,14 @@
 package entities;
 
+import java.text.DecimalFormat;
+
 public class Product8 {
 
+	DecimalFormat df = new DecimalFormat("0.00");
+	
 	private String name;
 	private Double price;
-	
+		
 	public Product8() {
 	}
 
@@ -40,7 +44,7 @@ public class Product8 {
 	
 	@Override
 	public String toString() {
-		return "Product [name=" + name + ", price=" + price + "]";
+		return "Product [name=" + name + ", price=" + df.format(price) + "]";
 	}
 
 }
