@@ -42,6 +42,10 @@ public class Product8 {
 		return price >= 100.0;
 	}
 	
+	public static void staticPriceUpdate(Product8 p) {
+		p.setPrice(p.getPrice() * 1.1);
+	}
+	
 	@Override
 	public String toString() {
 		return "Product [name=" + name + ", price=" + df.format(price) + "]";
