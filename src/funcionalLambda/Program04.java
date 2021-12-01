@@ -21,11 +21,7 @@ public class Program04 {
 		
 		double factor = 1.1;
 		
-		Consumer<Product8> cons = p -> {
-			p.setPrice(p.getPrice() * factor);
-		};
-		
-		list.forEach(cons);
+		list.forEach(p -> p.setPrice(p.getPrice() * factor));
 		
 		list.forEach(System.out::println);
 
