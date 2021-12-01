@@ -3,6 +3,7 @@ package funcionalLambda;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+import java.util.function.Consumer;
 
 import entities.Product8;
 
@@ -18,7 +19,13 @@ public class Program04 {
 		list.add(new Product8("Tablet", 350.00));
 		list.add(new Product8("Notebook", 80.90));
 		
-		list.forEach(Product8::nonStaticPriceUpdate);
+		double factor = 1.1;
+		
+		Consumer<Product8> cons = p -> {
+			p.setPrice(p.getPrice() * factor);
+		};
+		
+		list.forEach(cons);
 		
 		list.forEach(System.out::println);
 
