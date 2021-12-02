@@ -50,6 +50,10 @@ public class Product8 {
 		price = price * 1.1;
 	}
 	
+	public static String staticUpperCaseName(Product8 p) {
+		return p.getName().toUpperCase();
+	}
+	
 	@Override
 	public String toString() {
 		return "Product [name=" + name + ", price=" + df.format(price) + "]";
