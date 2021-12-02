@@ -54,6 +54,10 @@ public class Product8 {
 		return p.getName().toUpperCase();
 	}
 	
+	public String nonStaticUpperCaseName() {
+		return name.toUpperCase();
+	}
+	
 	@Override
 	public String toString() {
 		return "Product [name=" + name + ", price=" + df.format(price) + "]";
